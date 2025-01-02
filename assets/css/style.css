@@ -1,56 +1,124 @@
+/* Import a custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #7B0C1E;
+    --secondary-color: #FFFFFF;
+    --text-color: #333;
+    --background-color: #F9F9F9;
+    --header-padding: 20px 0;
+    --section-padding: 20px;
+    --footer-padding: 20px 0;
+    --font-family: 'Roboto', sans-serif;
+}
+
 /* Basic CSS reset to ensure consistent styling across browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFFFFF; /* White background */
-    color: #333;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     padding-bottom: 100px; /* Add padding to the bottom to ensure content is not hidden by the footer */
 }
 
 header {
-    background-color: #7B0C1E; /* Red header background */
-    color: white;
-    padding: 5px 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--header-padding);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+header h1:hover {
+    color: #FFD700; /* Gold color on hover */
 }
 
 section {
-    padding: 20px;
+    padding: var(--section-padding);
     margin: 20px;
-    background-color: white;
+    background-color: var(--secondary-color);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-h1 {
-    color: #FFFFFF; /* White headings */
+section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
 }
 
-h2 {
-    color: #7B0C1E; /* Red headings */
+h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
 }
 
 ul {
     list-style-type: disc; /* Ensure bullets are displayed */
     padding-left: 40px; /* Add some padding to the left to display bullets clearly */
+    margin-bottom: 20px;
 }
 
 ul li {
     padding: 5px 0;
 }
 
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
 footer {
-    background-color: #7B0C1E; /* Red footer background */
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
-    padding: 10px 0;
+    padding: var(--footer-padding);
     position: relative;
     width: 100%;
     bottom: 0;
+}
+
+footer address, footer p {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Focus and Accessibility Enhancements */
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 2px dashed var(--primary-color);
+    outline-offset: 4px;
 }

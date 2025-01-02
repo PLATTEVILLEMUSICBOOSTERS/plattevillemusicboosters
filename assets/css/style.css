@@ -77,6 +77,16 @@ a {
     text-decoration: none;
 }
 
+/* Ensure email link in footer is always white */
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+    color: var(--secondary-color); /* Maintain white color on hover and focus */
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);

@@ -2,7 +2,38 @@
 layout: default
 title: Platteville Music Boosters
 ---
-<h1>Welcome to Platteville Music Boosters</h1>
-<p>Support our cause by making a donation!</p>
-<!-- DonorBox Embed Code -->
-<iframe src="https://donorbox.org/embed/plattevillemusicboosters" height="685px" width="100%" style="max-width: 500px; min-width: 310px; max-height:none!important;"></iframe>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Platteville Music Boosters</h1>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p>We are dedicated to supporting music education in the Platteville area.</p>
+    </section>
+
+    <section>
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide resources and opportunities for students to excel in music.</p>
+    </section>
+
+    <section>
+        <h2>Get Involved</h2>
+        <p>Support our cause by making a donation or volunteering your time!</p>
+        <!-- DonorBox Embed Code -->
+        <iframe src="https://donorbox.org/embed/plattevillemusicboosters" height="685px" width="100%" style="max-width: 500px; min-width: 310px; max-height:none!important;"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    </footer>
+</body>
+</html>

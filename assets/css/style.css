@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #CC0000; /* Red header background */
+    background-color: #7B0C1E; /* Red header background */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -21,8 +21,12 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1, h2 {
-    color: #CC0000; /* Red headings */
+h1 {
+    color: #000000; /* Black headings */
+}
+
+h2 {
+    color: #7B0C1E; /* Red headings */
 }
 
 ul {
@@ -35,7 +39,7 @@ ul li {
 }
 
 footer {
-    background-color: #CC0000; /* Red footer background */
+    background-color: #7B0C1E; /* Red footer background */
     color: white;
     text-align: center;
     padding: 10px 0;

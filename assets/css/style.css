@@ -21,7 +21,7 @@ body {
 section {
     padding: var(--section-padding);
     margin: 20px;
-    background-color: var(--section-background-color); /* Use the new section background color */
+    background-color: var(--background-color); /* Use the new section background color */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -29,15 +29,15 @@ section {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    color: var(--primary-color); /* Ensure H1 is visible */
+    color: var(--primary-color) !important; /* Ensure H1 is visible */
 }
 
 h1 {
-    color: var(--primary-color); /* Change H1 color */
+    color: var(--primary-color) !important; /* Change H1 color */
     margin-bottom: 15px;
 }
 
 h2 {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     margin-bottom: 15px;
 }

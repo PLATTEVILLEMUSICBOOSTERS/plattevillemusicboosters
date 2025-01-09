@@ -1,76 +1,95 @@
----
-layout: default
-title: Platteville Music Boosters
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to the custom CSS file -->
-   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    <!-- Add Bootstrap CSS for modal functionality -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
         <h1>Welcome to Platteville Music Boosters</h1>
+        <!-- Donate Now Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#donateModal">Donate Now</button>
     </header>
 
-<section>
-    <h2>About Us</h2>
-    <p>At Platteville Music Boosters, we're all about coming together as a community to support music education. We're here to help our local students explore their musical talents and reach their full potential through shared efforts and support. We believe in exposing students to a variety of musical experiences, from performances and workshops to collaborations with visiting professionals, to enrich their learning and inspire a lifelong love of music.</p>
-</section>
-
-<section>
-    <h2>What We Do</h2>
-    <p>Your donation directly supports music in Platteville. Because of your generosity, the Platteville Music Boosters can continue funding for:</p>
-    <ul>
-        <li>Scholarships for college, music camps, honors ensembles</li>
-        <li>Travel assistance for performing groups</li>
-        <li>Support for visiting professional performances</li>
-        <li>Assisting with Solo and Ensemble accompanists</li>
-        <li>Financial support for special requests from the music staff</li>
-        <li>Attract and retain top talent music educators</li>
-        <li>Much, much more</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Get Involved</h2>
-    <p>Support our cause by making a donation or volunteering your time!</p>
-    <ul>
-        <li>Concession stands during Platteville High School volleyball games</li>
-        <li>Annual 4th of July, Heritage Days at Platteville's Rollo Jamison Mining Museum</li>
-        <li>Annual No Fuss Fundraiser</li>
-        <li>Donate Here!</li>
-    </ul>
-    <!-- DonorBox Embed Code -->
-    <iframe src="https://donorbox.org/embed/plattevillemusicboosters" height="685px" width="100%" style="max-width: 500px; min-width: 310px; max-height:none!important;"></iframe>
-</section>
-
-<section>
-    <h2>Stay connected with us on Facebook!</h2>
-    <a href="https://www.facebook.com/groups/PlattevilleMusicBoosters" target="_blank">Join our Facebook Group</a>
-
-    <div class="fb-page" data-href="https://www.facebook.com/PlattevilleMusicBoosters" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-        <blockquote cite="https://www.facebook.com/PlattevilleMusicBoosters" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/PlattevilleMusicBoosters">Join our Facebook Group</a>
-        </blockquote>
+    <!-- Modal -->
+    <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="donateModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="donateModalLabel">Support Platteville Music Boosters</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- DonorBox Embed Code -->
+                    <iframe src="https://donorbox.org/embed/plattevillemusicboosters" height="685px" width="100%" style="max-width: 500px; min-width: 310px; max-height:none!important;"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
 
-<footer>
-    <address>
-        Platteville Music Boosters<br>
-        PO Box 782<br>
-        Platteville, WI 53818<br>
-        <a href="mailto:plattevillemusicboosters@gmail.com">plattevillemusicboosters@gmail.com</a>
-    </address>
-    <p>&copy; {{ site.time | date: '%Y' }} Platteville Music Boosters. All rights reserved.</p>
-</footer>
+    <section>
+        <h2>About Us</h2>
+        <p>At Platteville Music Boosters, we're all about coming together as a community to support music education. We're here to help our local students explore their musical talents and reach their full potential through shared efforts and support. We believe in exposing students to a variety of musical experiences, from performances and workshops to collaborations with visiting professionals, to enrich their learning and inspire a lifelong love of music.</p>
+    </section>
 
-<!-- Include Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="ABC123"></script>
+    <section>
+        <h2>What We Do</h2>
+        <p>Your donation directly supports music in Platteville. Because of your generosity, the Platteville Music Boosters can continue funding for:</p>
+        <ul>
+            <li>Scholarships for college, music camps, honors ensembles</li>
+            <li>Travel assistance for performing groups</li>
+            <li>Support for visiting professional performances</li>
+            <li>Assisting with Solo and Ensemble accompanists</li>
+            <li>Financial support for special requests from the music staff</li>
+            <li>Attract and retain top talent music educators</li>
+            <li>Much, much more</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Get Involved</h2>
+        <p>Support our cause by making a donation or volunteering your time!</p>
+        <ul>
+            <li>Concession stands during Platteville High School volleyball games</li>
+            <li>Annual 4th of July, Heritage Days at Platteville's Rollo Jamison Mining Museum</li>
+            <li>Annual No Fuss Fundraiser</li>
+            <li>Donate Here!</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Stay connected with us on Facebook!</h2>
+        <a href="https://www.facebook.com/groups/PlattevilleMusicBoosters" target="_blank">Join our Facebook Group</a>
+
+        <div class="fb-page" data-href="https://www.facebook.com/PlattevilleMusicBoosters" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/PlattevilleMusicBoosters" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/PlattevilleMusicBoosters">Join our Facebook Group</a>
+            </blockquote>
+        </div>
+    </section>
+
+    <footer>
+        <address>
+            Platteville Music Boosters<br>
+            PO Box 782<br>
+            Platteville, WI 53818<br>
+            <a href="mailto:plattevillemusicboosters@gmail.com">plattevillemusicboosters@gmail.com</a>
+        </address>
+        <p>&copy; {{ site.time | date: '%Y' }} Platteville Music Boosters. All rights reserved.</p>
+    </footer>
+
+    <!-- Include Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="ABC123"></script>
+    <!-- Add Bootstrap JS for modal functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

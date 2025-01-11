@@ -49,8 +49,8 @@ h2 {
     border-color: #7B0C1E !important;
     padding: 10px 20px !important; /* Adjust the padding as needed */
     margin-top: 20px; /* Add margin to the top to create separation */
+    font-size: 1.25rem; /* Adjust the font size as needed */
 }
-
 /* Centering styles */
 header {
     text-align: center;

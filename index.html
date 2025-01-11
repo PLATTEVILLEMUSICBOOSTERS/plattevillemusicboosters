@@ -80,8 +80,7 @@
             PO Box 782<br>
             Platteville, WI 53818<br>
             <a href="mailto:plattevillemusicboosters@gmail.com">plattevillemusicboosters@gmail.com</a>
-        </address>
-        <p>&copy; {{ site.time | date: '%Y' }} Platteville Music Boosters. All rights reserved.</p>
+       <p>&copy; <span id="current-year"></span> Platteville Music Boosters. All rights reserved.</p>
     </footer>
 
     <!-- Include Facebook SDK for JavaScript -->
@@ -91,5 +90,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript to update the year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

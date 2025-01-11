@@ -46,5 +46,17 @@ h2 {
 .btn-primary {
     background-color: #7B0C1E !important;
     border-color: #7B0C1E !important;
-    padding: 10px 20px !important; /* Adjust the padding as needed */
+    padding: 20px 40px !important; /* Adjust the padding as needed */
+}
+/* Centering styles */
+header {
+    text-align: center;
+    padding: var(--header-padding);
+}
+
+section {
+    text-align: center;
+    padding: var(--section-padding);
+    margin: 20px auto; /* Center horizontally */
+    max-width: 800px;  /* Adjust the max-width as needed */
 }
